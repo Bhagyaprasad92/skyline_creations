@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skyline Studios</title>
+        <link rel="stylesheet" href="style3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+    </head>
+    
+<body>
+    <header class="header">
+        <h1 class="logo">SKYLINE<span> Creations</span></h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2 class="animate__fadeInDown">Innovating Your Ideas</h2>
+        <p class="animate__fadeInUp">We craft extraordinary designs and experiences that resonate with your vision.</p>
+        <a href="#services" class="btn animate__pulse">Discover Our Services</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="animate__zoomIn">Our Services</h2>
+        <a href="web_dev.html">
+        <div class="service-box animate__flipInX">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Website Development</h3>
+            <p>Responsive and dynamic websites tailored to your needs.</p>
+        </div></a>
+        <a href="poster_dev.html">
+        <div class="service-box animate__lightSpeedInLeft">
+            <i class="fas fa-pencil-ruler"></i>
+            <h3>Poster Design</h3>
+            <p>Eye-catching posters that convey your message effectively.</p>
+        </div></a>
+        <a href="resume_dev.html">
+        <div class="service-box animate__flipInY">
+            <i class="fas fa-file-alt"></i>
+            <h3>Resume Writing</h3>
+            <p>Professional resumes that highlight your strengths.</p>
+        </div></a>
+        <a href="photo_dev.html">
+        <div class="service-box animate__rotateIn">
+            <i class="fas fa-camera-retro"></i>
+            <h3>Photo Editing</h3>
+            <p>Enhancing your photos to perfection.</p>
+        </div></a>
+        <a href="video_dev.html">
+        <div class="service-box animate__slideInLeft">
+            <i class="fas fa-video"></i>
+            <h3>Video Editing</h3>
+            <p>Engaging video edits that tell your story.</p>
+        </div></a>
+        <a href="banners-adds_dev.html">
+        <div class="service-box animate__slideInRight">
+            <i class="fas fa-flag"></i>
+            <h3>Banners & Advertisements</h3>
+            <p>Attractive banners and ads that grab attention.</p>
+        </div></a>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="animate__fadeIn">About Us</h2>
+        <p class="animate__fadeInUp">We are a team of creative professionals dedicated to delivering top-notch services in web development, design, and multimedia editing.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="animate__fadeIn">Contact Us</h2>
+        <div class="contact-info">
+            <p>Phone: <a href="tel:+916305259511" class="animate__zoomIn">+91 630 525 9511</a></p>
+            <p>Phone: <a href="tel:+918143837005" class="animate__zoomIn">+91 814 383 7005</a></p>
+            <p>Email: <a href="mailto:bhagyaprasaddannina92@gmail.com" class="animate__zoomIn">bhagyaprasaddannina92@gmail.com</a></p>
+            <button class="website-button" onclick="window.open('https://t.me/Paid_Professional_Resumes'), _blank">
+                Join us in Telegram for more info.
+            </button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Skyline Creations. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
